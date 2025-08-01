@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal of Our Moments 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="judul">Portal of Our Moments 💖</h1>
+
+    <!-- PORTAL -->
+    <div class="portal" onclick="openPortal()">
+      <div class="circle-glow"></div>
+      <span class="click-me">Klik Portal</span>
+    </div>
+
+    <!-- TRANSISI MAGIC -->
+    <div class="transition-overlay" id="transitionOverlay">
+      <div class="pulse-circle"></div>
+    </div>
+
+    <!-- TARGET SCROLL -->
+    <div class="moment-wrapper" id="momentWrapper">
+      <div class="moment-box" id="momentBox">
+        <img src="assets/moment1.jpg" alt="Moment" id="momentImage"/>
+        <p id="momentCaption">"Kenangan manis pertama kita..."</p>
+        <h2 class="gf-text">Happy Girlfriend Day 💕</h2>
+        <button class="next-btn" onclick="showNext()">Next ➜</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
