@@ -131,8 +131,8 @@ body {
 
 .sticker {
   position: absolute;
-  width: 60px;
-  opacity: 0.25;
+  width: 70px;
+  opacity: 0.7;
   animation: floatUp 3s ease-out forwards;
 }
 
