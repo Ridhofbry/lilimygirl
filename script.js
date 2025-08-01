@@ -1,4 +1,3 @@
-
 const moments = [
   { src: 'assets/moment1.jpg', caption: 'Waktu kita pertama jalan bareng.' },
   { src: 'assets/moment2.jpg', caption: 'Hari ulang tahun kamu yang spesial banget.' },
@@ -19,6 +18,8 @@ function openPortal() {
     box.classList.add('show');
     showMoment(currentIndex);
 
+    spawnStickers(); // 🟢 Tambahkan animasi stiker lucu di sini
+
     // Scroll otomatis ke bagian foto dengan smooth transition
     wrapper.scrollIntoView({ behavior: 'smooth' });
 
@@ -35,4 +36,27 @@ function showMoment(index) {
 function showNext() {
   currentIndex = (currentIndex + 1) % moments.length;
   showMoment(currentIndex);
+}
+
+// ✨ Animasi stiker cewek berhijab
+function spawnStickers() {
+  const container = document.getElementById('stickerContainer');
+  const stickerImages = [
+    'https://i.ibb.co/WFNL5Y5/hijab1.png',
+    'https://i.ibb.co/tM0ZkZ7/hijab2.png',
+    'https://i.ibb.co/6Z8BQ00/hijab3.png'
+  ];
+
+  for (let i = 0; i < 10; i++) {
+    const img = document.createElement('img');
+    img.src = stickerImages[Math.floor(Math.random() * stickerImages.length)];
+    img.className = 'sticker';
+    img.style.left = `${Math.random() * 100}%`;
+    img.style.top = `${Math.random() * 100}%`;
+    container.appendChild(img);
+
+    setTimeout(() => {
+      img.remove();
+    }, 3000);
+  }
 }
