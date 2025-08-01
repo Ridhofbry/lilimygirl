@@ -16,6 +16,7 @@ function openPortal() {
   setTimeout(() => {
     overlay.style.display = "none";
     box.classList.add('show');
+    spawnStickers();
     showMoment(currentIndex);
 
     spawnStickers(); // 🟢 Tambahkan animasi stiker lucu di sini
