@@ -43,9 +43,7 @@ function showNext() {
 function spawnStickers() {
   const container = document.getElementById('stickerContainer');
   const stickerImages = [
-    'https://i.ibb.co/WFNL5Y5/hijab1.png',
-    'https://i.ibb.co/tM0ZkZ7/hijab2.png',
-    'https://i.ibb.co/6Z8BQ00/hijab3.png'
+'https://www.clipartmax.com/png/small/469-4699940_hijab-sticker-illustration.png'
   ];
 
   for (let i = 0; i < 10; i++) {
